@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(199, 225, 238);
+}
+.calculator {
+    border: 1px solid rgb(200, 193, 193);
+    width: fit-content;
+    margin: 200px;
+    margin-left: 515px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+button {
+    width: 60px;
+    height: 50px;
+    background-color: rgb(21, 109, 150);
+    color: white;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 10px;
+}
+
+input {
+    width: 246px;
+    height: 40px;
+    text-align: right;
+}
+
+#btn3, #btn4, #btn5, #btn6, #btn9{
+    background-color: rgb(78, 141, 177);
+}
+
+#AC, #btn1, #btn2{
+    background-color: rgb(140, 199, 219);
+}
+
+
