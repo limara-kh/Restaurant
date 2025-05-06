@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu</title>
+  <link rel="stylesheet" href="fetch.css">
+  <style>
+    body {
+      background-color: #fffaf0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-container {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #c0392b;
+    }
+
+    .menu-section {
+      margin-top: 40px;
+    }
+
+    .menu-section h2 {
+      color: #e67e22;
+      border-bottom: 2px solid #e67e22;
+      padding-bottom: 10px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .menu-item p {
+      margin: 0;
+    }
+
+    .item-name {
+      font-weight: bold;
+    }
+
+    .item-price {
+      color: #27ae60;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <h1>Our Menu</h1>
+
+    <div class="menu-section">
+      <h2>Starters</h2>
+      <div class="menu-item">
+        <p class="item-name">Bruschetta</p>
+        <p class="item-price">€5.30</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Garlic Shrimp</p>
+        <p class="item-price">€6</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Tomato soup</p>
+        <p class="item-price">€6.80</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Chicken Salad</p>
+        <p class="item-price">€3.40</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Tomato salad</p>
+        <p class="item-price">€3.40</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">French onion soup</p>
+        <p class="item-price">€2.50</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Salad</p>
+        <p class="item-price">€2</p>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Main Course</h2>
+      <div class="menu-item">
+        <p class="item-name">Grilled Salmon</p>
+        <p class="item-price">€8.20</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Beef Lasagna</p>
+        <p class="item-price">€10</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Italian cheese & tomato pizza</p>
+        <p class="item-price">€11.20</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Grilled fish and potatoes</p>
+        <p class="item-price">€9.30</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Vegetable pasta</p>
+        <p class="item-price">€7</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Roast chicken and potatoes</p>
+        <p class="item-price">€12.5</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">German sausage and chips</p>
+        <p class="item-price">€14.10</p>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Desserts</h2>
+      <div class="menu-item">
+        <p class="item-name">Dark Chocolate Lava Cake</p>
+        <p class="item-price">€10</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Vanilla Cheesecake</p>
+        <p class="item-price">€7</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Fruit salad and cream</p>
+        <p class="item-price">€6.80</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Ice cream (choose from chocolate, coffee, strawberry, milky, nuts..)</p>
+        <p class="item-price">€3.9</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Cake (choose from chocolate, lemon, apple, berry, dairy honey...)</p>
+        <p class="item-price">€4</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Cheese and biscuits</p>
+        <p class="item-price">€5.55</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">American Cookie's</p>
+        <p class="item-price">€4.15</p>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Drinks</h2>
+      <div class="menu-item">
+        <p class="item-name">Fresh Orange Juice</p>
+        <p class="item-price">€4/1l jug</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Sparkling Water</p>
+        <p class="item-price">€3/bottle</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Mineral Water</p>
+        <p class="item-price">€1/glass</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Coffee (choose from latte, americano, raf, capuchino...)</p>
+        <p class="item-price">€5/cup or glass</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Lemonade (choose from berry, mojito, kiwi&lime, strawberry, pomegranate...)</p>
+        <p class="item-price">€4/1l jug</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Irish cream coffee</p>
+        <p class="item-price">€3.10/cup</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Tea (choose from black, green, Tashkent, Moroccan, Turkish...)</p>
+        <p class="item-price">€2/1 kettle</p>
+      </div>
+      <div class="menu-item">
+        <p class="item-name">Cocktail (choose from chocolate, browny, oreo, kinder, strawberry, vanilly, peach... )</p>
+        <p class="item-price">v3/glass</p>
+      </div>
+    </div>
+    <div class="menu-section">
+        <h2>Alcoholic Drinks</h2>
+        <div class="menu-item">
+          <p class="item-name">Red Wine – Cabernet Sauvignon</p>
+          <p class="item-price">€12 / glass</p>
+        </div>
+        <div class="menu-item">
+          <p class="item-name">White Wine – Chardonnay</p>
+          <p class="item-price">€11 / glass</p>
+        </div>
+        <div class="menu-item">
+          <p class="item-name">Classic Mojito</p>
+          <p class="item-price">€10</p>
+        </div>
+        <div class="menu-item">
+          <p class="item-name">Whiskey – Jameson</p>
+          <p class="item-price">€9 / shot</p>
+        </div>
+        <div class="menu-item">
+          <p class="item-name">Craft Beer – IPA</p>
+          <p class="item-price">€8</p>
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>
