@@ -1,0 +1,82 @@
+document.getElementById("searchBtn").addEventListener("click", () => {
+    const query = document.getElementById("search").value.trim();
+    const resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = "Loading...";
+    let url = "";
+
+    if (query.length==1) {
+      url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${encodeURIComponent(query)}`;
+    } else{
+      url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${encodeURIComponent(query)}`;
+    }
+
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        if (data.meals) {
+            console.log(data.meals)
+          resultDiv.innerHTML = data.meals.map(meal => `
+            <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+              <h3 id="strMeal">${meal.strMeal}</h3>
+              <img src="${meal.strMealThumb}" alt="${meal.strMeal}" id="strMealThumb"; style="width: 100%; max-width: 300px; border-radius: 8px;">
+              <p style="color: black;" id="strCategory"><strong>Category:</strong> ${meal.strCategory}</p>
+              <p style="color: black;" id="strArea"><strong>Area:</strong> ${meal.strArea}</p>
+              <ul style="color: black;" id="strIngredient" id="strMeasure"><strong>Indredient:</strong> ${meal.strIngredient1} ${meal.strMeasure1} 
+              ${meal.strIngredient2} ${meal.strMeasure2}
+              ${meal.strIngredient3} ${meal.strMeasure3} 
+              ${meal.strIngredient4} ${meal.strMeasure4}
+              ${meal.strIngredient5} ${meal.strMeasure5}
+              ${meal.strIngredient6} ${meal.strMeasure6}
+              ${meal.strIngredient7} ${meal.strMeasure7}
+              ${meal.strIngredient8} ${meal.strMeasure8} 
+              ${meal.strIngredient9} ${meal.strMeasure9}
+              ${meal.strIngredient10} ${meal.strMeasure10}  
+              ${meal.strIngredient11} ${meal.strMeasure11} 
+              ${meal.strIngredient12} ${meal.strMeasure12} 
+              ${meal.strIngredient13} ${meal.strMeasure13}  
+              ${meal.strIngredient14} ${meal.strMeasure14}  
+              ${meal.strIngredient15} ${meal.strMeasure15}
+              ${meal.strIngredient16} ${meal.strMeasure16} 
+              ${meal.strIngredient17} ${meal.strMeasure17} 
+              ${meal.strIngredient18} ${meal.strMeasure18}  
+              ${meal.strIngredient19} ${meal.strMeasure19}
+              ${meal.strIngredient20} ${meal.strMeasure20}</ul>
+            <p style="color: black;"><strong>Instructions:</strong> ${meal.strInstructions.slice(0, 200)}...</p>
+            </div>
+          `).join("");
+        } else {
+          resultDiv.innerHTML = "<p>No meals found. 😢</p>";
+        }
+    })
+
+    // document.getElementById("saveBtn").addEventListener("click", () => { 
+    //     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${encodeURIComponent(query)}`)
+    //     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${encodeURIComponent(query)}`)
+    //     .then(response => response.json())
+    //     .then(data =>  {
+    //         strMeal.textContent = " " + data.object.strMeal
+    //         strCategory.textContent = " " + data.object.strCategory
+    //         img.src = "strMealThumb" + data.object.img
+    //         strArea.textContent = "Area: " + data.object.strArea
+    //         strIngredient.textContent = "Ingredient: " + data.object.strIngredient
+    //         strMeasure.textContent = "Measure: " + data.object.strMeasure
+           
+    //         data_meals.strMeal = data.object.strMeal
+    //         data_meals.strCategory = data.object.strCategory
+    //         data_meals.strArea = data.object.object.strArea
+    //         data_meals.strIngredient = data.object.strIngredient
+    //         data_meals.strMeasure = data.object.strMeasure
+    //         data_meals.img = data.object.icon
+    //         localStorage.setItem('data_meals', JSON.stringify(data_meals))
+    //     })
+    // })
+    
+    //     .catch(error => console.log(error))
+    //   })
+      .catch(err => {
+        console.error(err);
+      })
+    
+    })
+
+    
