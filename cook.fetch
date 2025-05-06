@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fetch</title>
+    <link rel="stylesheet" href="fetch.css">
+</head>
+<body>
+  <header>
+    <a href="menu.html">Menu</a>
+    <a href="crew.html">Our Crew</a>
+    <a href="recepts.html">Recepts</a>
+    <a href="login.html">Log in</a>
+  </header>
+  
+<br><br><br>
+
+  <nav>
+    <h1>Eat, Love, Pray</h1>
+   <div>
+    <input type="text" id="search" placeholder="hmmm...">
+  <button id="searchBtn">search</button>
+</div> 
+<div id="result"></div>
+<button id="saveBtn">Save</button>
+  <br><br>
+  </nav>
+
+  <section>
+    <div>
+      <h2  id="recommended">Recommended</h2>
+  </div>
+  </section>
+
+  <footer>
+    <p>Contacts</p>
+    <div class="contact-item">
+      <a href="https://www.instagram.com/yourprofile" target="_blank">
+        📸 Instagram — Follow us for news and recipes!
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <a href="https://wa.me/77001234567" target="_blank">
+        💬 WhatsApp — Write to us immediately with your questions or orders!
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <a href="https://yourwebsite.com/delivery" target="_blank">
+        🚚 Delivery — See delivery times and prices.
+      </a>
+    </div>
+  </div>
+
+  </footer>
+    <script src="fetch.js"></script>
+  
+</body>
+</html>
