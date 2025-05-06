@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Crew</title>
+  <link rel="stylesheet" href="fetch.css" />
+  <style>
+    body {
+      background-color: #fffaf0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .crew-container {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #c0392b;
+    }
+
+    .crew-member {
+      display: flex;
+      flex-direction: column;
+      padding: 15px 0;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .member-info {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .member-name {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .member-role {
+      color: #e67e22;
+      font-style: italic;
+    }
+
+    .member-bio {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .barista-section {
+      margin-top: 40px;
+      padding: 20px 0;
+      border-top: 2px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="crew-container">
+    <h1>Meet Our Crew</h1>
+
+    <div class="barista-section">
+        <h2>Our Head Chef</h2>
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Chef Giulio Francesco</p>
+        <p class="member-role">Head Chef</p>
+        <p class="member-bio">An Italian-born chef with 20+ years of culinary mastery in Mediterranean cuisine.</p>
+      </div>
+    </div>
+
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Chef Russell Arthur</p>
+        <p class="member-role">Head Chef</p>
+        <p class="member-bio">An experienced and disciplined professional chef who works on the basis of classic British cuisine. They are creative when creating new menus, but always rely on traditional methods.</p>
+      </div>
+    </div>
+
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Chef Theresa Sean</p>
+        <p class="member-role">Head Chef</p>
+        <p class="member-bio">A skilled chef with exceptional taste and creativity, he creates new flavors and dishes based on the traditions of Irish cuisine, combined with modern techniques.</p>
+      </div>
+    </div>
+
+    
+    <div class="barista-section">
+        <h2>Our Pastry Chef</h2>
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Manon-Béatrice Isaac</p>
+        <p class="member-role">Pastry Chef</p>
+        <p class="member-bio">A dessert specialist known for her award-winning cheesecakes and artisan pastries.</p>
+      </div>
+    </div>
+
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Christopher Ernest</p>
+        <p class="member-role">Pastry Chef</p>
+        <p class="member-bio">With a deep understanding and experience of Canadian culinary culture, he often comes up with new ideas, but never forgets his original recipes.</p>
+      </div>
+    </div>
+
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Ruby Jung</p>
+        <p class="member-role">Pastry Chef</p>
+        <p class="member-bio">Her work combines the traditions of Korean cuisine with modern techniques to create delicious and artistic desserts.</p>
+      </div>
+    </div>
+
+    
+    <div class="barista-section">
+        <h2>Our Sommelier</h2>
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Beom Seok Lee</p>
+        <p class="member-role">Sommelier</p>
+        <p class="member-bio">Wine expert who curates our drink pairings to enhance your dining experience.</p>
+      </div>
+    </div>
+
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Zurab Irakli</p>
+        <p class="member-role">Sommelier</p>
+        <p class="member-bio">Through his deep love and understanding of wine, he provides clients with professional advice on wine selection.</p>
+      </div>
+    </div>
+
+    <div class="barista-section">
+        <h2>Our Waiter</h2>
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Demitra Blue</p>
+        <p class="member-role">Waitress</p>
+        <p class="member-bio">Friendly and attentive, always ready to make your meal enjoyable and memorable.</p>
+      </div>
+    </div>
+
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Rebecca Meteo</p>
+        <p class="member-role">Waitress</p>
+        <p class="member-bio">A serious, meticulous and dedicated trainer.</p>
+      </div>
+    </div>
+
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Jacqueline Vincent</p>
+        <p class="member-role">Waitress</p>
+        <p class="member-bio">Open-minded, cheerful and energetic trainer</p>
+      </div>
+    </div>
+
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Evan Park</p>
+        <p class="member-role">Waiter</p>
+        <p class="member-bio">A calm, but very careful trainer.</p>
+      </div>
+    </div>
+
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Charles David</p>
+        <p class="member-role">Waiter</p>
+        <p class="member-bio">A guy who does his job quickly and reliably.</p>
+      </div>
+    </div>
+
+    <div class="crew-member">
+      <div class="member-info">
+        <p class="member-name">Nicholas Samuel</p>
+        <p class="member-role">Waiter</p>
+        <p class="member-bio">Good-natured, a little free-spirited, but very hardworking.</p>
+      </div>
+    </div>
+
+    <div class="barista-section">
+      <h2>Our Baristas</h2>
+      <div class="crew-member">
+        <div class="member-info">
+          <p class="member-name">Sophie-Rosie Raymond</p>
+          <p class="member-role">Barista</p>
+          <p class="member-bio">A coffee enthusiast, Sophie-Rosie creates the perfect brews with every cup, from espressos to lattes.</p>
+        </div>
+      </div>
+
+      <div class="crew-member">
+        <div class="member-info">
+          <p class="member-name">Liam O'Connor</p>
+          <p class="member-role">Barista</p>
+          <p class="member-bio">Known for his artistry with latte art, Liam crafts every cup with care and precision.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
